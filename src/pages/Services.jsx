@@ -73,12 +73,12 @@ export default function Services() {
         {/* Equipment Callout */}
         <div className="bg-[#111] border border-[#D4621A]/30 rounded-2xl overflow-hidden">
           <div className="md:flex">
-            {/* Photo placeholder */}
-            <div className="md:w-2/5 bg-gradient-to-br from-[#1e1e1e] to-[#141414] flex flex-col items-center justify-center py-16 px-8 gap-3 min-h-[260px]">
-              <svg className="w-14 h-14 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <p className="text-gray-600 text-xs font-medium text-center">Barreto 30SG photo coming soon</p>
+            <div className="md:w-2/5 shrink-0">
+              <img
+                src="/images/action3.jpg"
+                alt="Barreto 30SG cutting wheel grinding a stump with wood chips flying"
+                className="w-full h-full object-cover min-h-[260px]"
+              />
             </div>
 
             {/* Content */}
@@ -99,6 +99,38 @@ export default function Services() {
                 <Stat value="31hp" label="Engine Power" />
                 <Stat value='19"' label="Cutting Wheel" />
                 <Stat value='12"' label="Below Grade" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Equipment Gallery */}
+        <div className="mt-16">
+          <h2 className="font-oswald font-bold text-2xl sm:text-3xl text-white text-center mb-8">
+            Equipment in Action
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="sm:col-span-2 rounded-2xl overflow-hidden">
+              <img
+                src="/images/action4.jpg"
+                alt="Barreto 30SG tracked stump grinder working in a wooded area"
+                className="w-full h-64 sm:h-80 object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-3">
+              <div className="rounded-2xl overflow-hidden flex-1">
+                <img
+                  src="/images/action2.jpg"
+                  alt="Operator guiding the Barreto 30SG stump grinder on a residential lawn"
+                  className="w-full h-full object-cover min-h-[150px]"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden flex-1">
+                <img
+                  src="/images/30sg-in-action.jpg"
+                  alt="Barreto stump grinder in action with wood chips flying from the cutting wheel"
+                  className="w-full h-full object-cover min-h-[150px]"
+                />
               </div>
             </div>
           </div>

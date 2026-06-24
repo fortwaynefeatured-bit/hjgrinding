@@ -95,13 +95,11 @@ export default function Home() {
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="bg-[#111] border border-gray-800 rounded-2xl overflow-hidden">
-            {/* Placeholder — swap this div for an <img> when photo is ready */}
-            <div className="aspect-video bg-gradient-to-br from-[#1e1e1e] to-[#141414] flex flex-col items-center justify-center gap-4">
-              <svg className="w-16 h-16 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <p className="text-gray-600 text-sm font-medium">Equipment photo coming soon</p>
-            </div>
+            <img
+              src="/images/action2.jpg"
+              alt="Operator running the Barreto 30SG tracked stump grinder on a residential job"
+              className="w-full aspect-video object-cover"
+            />
             <div className="px-6 py-5 bg-[#0f0f0f] border-t border-gray-800">
               <p className="text-gray-400 text-sm text-center">
                 <span className="text-white font-semibold">Barreto 30SG Tracked Stump Grinder</span>

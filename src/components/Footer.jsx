@@ -26,6 +26,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-500 text-sm">Serving Fort Wayne, IN and surrounding areas</p>
+            <p className="text-gray-500 text-sm mt-1">Fast estimates by text</p>
             <p className="text-gray-600 text-xs mt-1 uppercase tracking-wider font-semibold">Licensed &amp; Insured</p>
           </div>
 

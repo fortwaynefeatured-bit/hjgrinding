@@ -1,4 +1,9 @@
 import { useState } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+const PAGE_TITLE = 'Free Stump Grinding Estimate — Fort Wayne, IN | Stump Chief'
+const PAGE_DESC = 'Get a free stump grinding estimate in Fort Wayne. Fast response, usually same day. Call or text (260) 267-0093 or fill out the form.'
+const OG_IMAGE = 'https://stumpchief.com/images/action2.jpg'
 
 const SIZE_OPTIONS = [
   { value: '', label: 'Select approximate size...' },
@@ -53,9 +58,28 @@ export default function Contact() {
     }
   }
 
+  const helmet = (
+    <Helmet>
+      <title>{PAGE_TITLE}</title>
+      <meta name="description" content={PAGE_DESC} />
+      <link rel="canonical" href="https://stumpchief.com/estimate" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Stump Chief" />
+      <meta property="og:title" content={PAGE_TITLE} />
+      <meta property="og:description" content={PAGE_DESC} />
+      <meta property="og:url" content="https://stumpchief.com/estimate" />
+      <meta property="og:image" content={OG_IMAGE} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={PAGE_TITLE} />
+      <meta name="twitter:description" content={PAGE_DESC} />
+      <meta name="twitter:image" content={OG_IMAGE} />
+    </Helmet>
+  )
+
   if (status === 'success') {
     return (
       <main className="pt-24 pb-20 min-h-screen flex items-center justify-center">
+        {helmet}
         <div className="max-w-md mx-auto px-4 sm:px-6 w-full text-center">
           <div className="bg-[#111] border border-gray-800 rounded-2xl p-12">
             <div className="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -89,6 +113,7 @@ export default function Contact() {
 
   return (
     <main className="pt-24 pb-20">
+      {helmet}
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
 
         {/* Page header */}

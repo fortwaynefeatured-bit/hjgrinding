@@ -15,9 +15,18 @@ export default function Home() {
   return (
     <main>
       {/* ── Hero ── */}
-      <section className="relative min-h-screen flex items-center bg-[#1a1a1a]">
-        {/* Subtle vignette gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-transparent to-[#D4621A]/5 pointer-events-none" />
+      <section className="relative min-h-screen flex items-center">
+        {/* Full-bleed background photo */}
+        <img
+          src="/images/action2.jpg"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+        {/* 60% black overlay */}
+        <div className="absolute inset-0 bg-black/60" />
+        {/* Bottom fade into trust strip */}
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#111] to-transparent" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-24 pb-24 md:pt-32 md:pb-36">
           <p className="text-[#D4621A] font-bold uppercase tracking-[0.25em] text-xs sm:text-sm mb-5">
@@ -87,25 +96,6 @@ export default function Home() {
                 </svg>
               }
             />
-          </div>
-        </div>
-      </section>
-
-      {/* ── Equipment Photo ── */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="bg-[#111] border border-gray-800 rounded-2xl overflow-hidden">
-            <img
-              src="/images/action2.jpg"
-              alt="Operator running the Barreto 30SG tracked stump grinder on a residential job"
-              className="w-full aspect-video object-cover"
-            />
-            <div className="px-6 py-5 bg-[#0f0f0f] border-t border-gray-800">
-              <p className="text-gray-400 text-sm text-center">
-                <span className="text-white font-semibold">Barreto 30SG Tracked Stump Grinder</span>
-                {' '}— Professional grade equipment on every job
-              </p>
-            </div>
           </div>
         </div>
       </section>

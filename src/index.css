@@ -5,6 +5,11 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
+
+  section {
+    scroll-margin-top: 90px;
   }
 
   body {

@@ -34,13 +34,24 @@ export default function Nav() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 shrink-0">
             <div className="w-9 h-9 bg-[#D4621A] rounded flex items-center justify-center shrink-0">
-              <span className="font-oswald font-bold text-white text-xs tracking-tight leading-none">H&J</span>
+              <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="12" y1="3" x2="12" y2="6" />
+                <line x1="12" y1="18" x2="12" y2="21" />
+                <line x1="3" y1="12" x2="6" y2="12" />
+                <line x1="18" y1="12" x2="21" y2="12" />
+                <line x1="5.6" y1="5.6" x2="7.8" y2="7.8" />
+                <line x1="16.2" y1="16.2" x2="18.4" y2="18.4" />
+                <line x1="18.4" y1="5.6" x2="16.2" y2="7.8" />
+                <line x1="7.8" y1="16.2" x2="5.6" y2="18.4" />
+              </svg>
             </div>
             <div className="hidden sm:block leading-tight">
               <div className="font-oswald font-semibold text-white text-sm tracking-wide">
-                Higgins &amp; Jordan
+                Stump Chief
               </div>
-              <div className="text-gray-500 font-medium text-xs tracking-wider uppercase">Grinding Co.</div>
+              <div className="text-gray-500 font-medium text-xs tracking-wider uppercase">Fort Wayne, IN</div>
             </div>
           </Link>
 

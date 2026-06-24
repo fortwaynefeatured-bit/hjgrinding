@@ -8,10 +8,21 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-3">
               <div className="w-9 h-9 bg-[#D4621A] rounded flex items-center justify-center shrink-0">
-                <span className="font-oswald font-bold text-white text-xs">H&J</span>
+                <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <circle cx="12" cy="12" r="3" />
+                  <line x1="12" y1="3" x2="12" y2="6" />
+                  <line x1="12" y1="18" x2="12" y2="21" />
+                  <line x1="3" y1="12" x2="6" y2="12" />
+                  <line x1="18" y1="12" x2="21" y2="12" />
+                  <line x1="5.6" y1="5.6" x2="7.8" y2="7.8" />
+                  <line x1="16.2" y1="16.2" x2="18.4" y2="18.4" />
+                  <line x1="18.4" y1="5.6" x2="16.2" y2="7.8" />
+                  <line x1="7.8" y1="16.2" x2="5.6" y2="18.4" />
+                </svg>
               </div>
               <span className="font-oswald font-semibold text-white text-base tracking-wide">
-                Higgins &amp; Jordan Grinding Co.
+                Stump Chief
               </span>
             </div>
             <p className="text-gray-500 text-sm">Serving Fort Wayne, IN and surrounding areas</p>
@@ -52,7 +63,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-gray-800/50 text-center">
           <p className="text-gray-700 text-xs">
-            &copy; {new Date().getFullYear()} Higgins &amp; Jordan Grinding Co. &mdash; Fort Wayne, Indiana
+            &copy; {new Date().getFullYear()} Stump Chief &mdash; Fort Wayne, Indiana
           </p>
         </div>
       </div>

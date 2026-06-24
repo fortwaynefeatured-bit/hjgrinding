@@ -12,14 +12,6 @@ function ServiceCard({ icon, title, body }) {
   )
 }
 
-function Stat({ value, label }) {
-  return (
-    <div className="bg-[#1a1a1a] border border-gray-800 rounded-xl p-5 text-center">
-      <div className="font-oswald font-bold text-3xl text-[#D4621A]">{value}</div>
-      <div className="text-gray-500 text-xs mt-1 uppercase tracking-wider font-semibold">{label}</div>
-    </div>
-  )
-}
 
 export default function Services() {
   return (
@@ -84,22 +76,16 @@ export default function Services() {
             {/* Content */}
             <div className="md:w-3/5 p-8 md:p-12">
               <p className="text-[#D4621A] font-bold uppercase tracking-[0.25em] text-xs mb-4">
-                Equipment
+                Access &amp; Results
               </p>
               <h3 className="font-oswald font-bold text-3xl text-white mb-5">
-                Professional Equipment.<br />Not a Rental Special.
+                Backyards. Tight Spaces.<br />Tough Stumps.
               </h3>
-              <p className="text-gray-300 leading-relaxed mb-8">
-                We run the Barreto 30SG — a 31hp tracked stump grinder with a 19-inch
-                cutting wheel that grinds 12 inches below grade. Tracked drive means we
-                can access backyard stumps through standard gates without tearing up
-                your lawn.
+              <p className="text-gray-300 leading-relaxed">
+                We can access narrow gates and tight spaces where larger grinders won't fit.
+                We grind stumps flush to grade or below, leaving your yard ready for sod,
+                landscaping, or replanting. No damage. No mess.
               </p>
-              <div className="grid grid-cols-3 gap-3">
-                <Stat value="31hp" label="Engine Power" />
-                <Stat value='19"' label="Cutting Wheel" />
-                <Stat value='12"' label="Below Grade" />
-              </div>
             </div>
           </div>
         </div>
@@ -142,10 +128,10 @@ export default function Services() {
             to="/estimate"
             className="inline-block bg-[#D4621A] text-white font-bold text-sm px-10 py-4 rounded hover:bg-[#bb5517] transition-colors tracking-wide"
           >
-            Get a Free Estimate
+            Text a Photo for Estimate
           </Link>
           <p className="text-gray-600 text-sm mt-4">
-            Or call / text us at{' '}
+            Or call us at{' '}
             <a href="tel:+12602670093" className="text-gray-400 hover:text-white transition-colors">
               (260) 267-0093
             </a>
